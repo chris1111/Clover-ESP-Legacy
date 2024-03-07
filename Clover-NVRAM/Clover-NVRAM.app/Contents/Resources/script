@@ -1,0 +1,36 @@
+#!/bin/sh 
+# Vars
+apptitle="CloverNVRAM"
+version="1.0"
+# Set Icon directory and file 
+export ICNS=$(dirname "${0}")
+iconfile="$ICNS/AppIcon.icns"
+
+# Select Restore
+response=$(osascript -e 'tell app "System Events" to display dialog "Select NVRAM to Install
+
+nvram.plist --> Volume ESP Clover.\n\nCancel to Quit" buttons {"Cancel","NVRAM"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+
+action=$(echo $response | cut -d ':' -f2)
+
+
+# Exit if Canceled
+if [ ! "$action" ] ; then
+  osascript -e 'display notification "Program close" with title "'"$apptitle"'" subtitle "User Cancel"'
+  echo "User Cancel"
+  Sleep 2
+  echo "QUITAPP"
+  exit 0
+fi
+
+if [ "$action" == "NVRAM" ] ; then
+echo "Install nvram.plist --> Volume ESP Clover"
+Sleep 1
+osascript -e 'do shell script "/Private/etc/rc.shutdown.d/80.save_nvram_plist.local" with administrator privileges'
+fi
+
+osascript <<EOD
+  tell application "Clover-NVRAM"
+      activate
+  end tell
+EOD

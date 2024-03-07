@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.chris1111.Packager" authoringToolVersion="1.0.0" authoringToolBuild="500">
+    <title>Clover ESP Legacy</title>
+    <options customize="never" allow-external-scripts="no" hostArchitectures="i386"/>
+    <domains enable_anywhere="true" enable_localSystem="true"/>
+    <background file="background" alignment="center" scaling="tofit"/>
+    <background-darkAqua file="background" alignment="center" scaling="tofit"/>
+    <welcome file="Welcome.rtf"/>
+    <readme file="Readme.rtf"/>
+    <license file="License.txt"/>
+    <choices-outline>
+        <line choice="choice1">
+            <line choice="choice2">
+                <line choice="choice3">
+                    <line choice="choice4">
+                        <line choice="choice5"/>
+                    </line>
+                    <line choice="choice6"/>
+                    <line choice="choice7"/>
+                    <line choice="choice8"/>
+                </line>
+            </line>
+        </line>
+    </choices-outline>
+    <choice id="choice1" title="Clover EFI ESP" description="Bootloader Clover" start_visible="false"/>
+    <choice id="choice2" title="Clover_v2.5k" description="Clover_v2.5k" start_visible="false"/>
+    <choice id="choice3" title="Clover_v2.5k" description="Install  Clover_v2.5k ESP to the Selected volumes." start_visible="false"/>
+    <choice id="choice4" title="pre" start_visible="false">
+        <pkg-ref id="com.chris1111.cloveresp.pre.pkg"/>
+        <pkg-ref id="com.chris1111.rcScripts.rcScripts.pkg"/>
+        <pkg-ref id="com.chris1111.cloveresp.cloverefiesp.pkg"/>
+    </choice>
+    <choice id="choice5" title="boot0af" start_visible="false">
+        <pkg-ref id="com.chris1111.cloveresp.boot0af.pkg"/>
+        <pkg-ref id="com.chris1111.cloveresp.biosboot.pkg"/>
+    </choice>
+    <choice id="choice6" title="esptarget" start_visible="false">
+        <pkg-ref id="com.chris1111.cloveresp.esptarget.pkg"/>
+    </choice>
+    <choice id="choice7" title="efofolder" start_visible="false">
+        <pkg-ref id="com.chris1111.cloveresp.efifolder.pkg"/>
+    </choice>
+    <choice id="choice8" title="post" start_visible="false">
+        <pkg-ref id="com.chris1111.cloveresp.post.pkg"/>
+    </choice>
+    <pkg-ref id="com.chris1111.cloveresp.pre.pkg" installKBytes="0" version="1.0" auth="Root">#pre.pkg</pkg-ref>
+    <pkg-ref id="com.chris1111.rcScripts.rcScripts.pkg" installKBytes="64" version="1.0" auth="Root">#rcScripts.pkg</pkg-ref>
+    <pkg-ref id="com.chris1111.cloveresp.cloverefiesp.pkg" installKBytes="64" version="1.0" auth="Root">#cloverefiesp.pkg</pkg-ref>
+    <pkg-ref id="com.chris1111.cloveresp.boot0af.pkg" installKBytes="0" version="1.0" auth="Root">#boot0af.pkg</pkg-ref>
+    <pkg-ref id="com.chris1111.cloveresp.biosboot.pkg" installKBytes="1556" version="1.0" auth="Root">#biosboot.pkg</pkg-ref>
+    <pkg-ref id="com.chris1111.cloveresp.esptarget.pkg" installKBytes="0" version="1.0" auth="Root">#esptarget.pkg</pkg-ref>
+    <pkg-ref id="com.chris1111.cloveresp.efifolder.pkg" installKBytes="23020" version="1.0" auth="Root">#efifolder.pkg</pkg-ref>
+    <pkg-ref id="com.chris1111.cloveresp.post.pkg" installKBytes="0" version="1.0" auth="Root">#post.pkg</pkg-ref>
+</installer-script>
