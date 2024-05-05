@@ -59,7 +59,7 @@ export -f GetNVRamKey
 # ---------------------------------------------
 echo "" > "$install_log"
 echo "Clover EFI installer log - $( date )" >> "$install_log"
-echo "Installer version: r5157 (commit: 841ff01f2) EFI bootloader" >> "$install_log"
+echo "Installer version: r5158 (commit: 250011e6b) EFI bootloader" >> "$install_log"
 echo "======================================================" >> "$install_log"
 echo "=========== Clover ESP Legacy by chris1111 ===========" >> "${install_log}"
 echo "======================================================" >> "$install_log"
