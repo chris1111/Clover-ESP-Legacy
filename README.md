@@ -11,16 +11,10 @@
 ### Build Package from command in macOS
 
 
-#### Clone the repository
+#### Clone and Build the repository
 ```bash
 
-git clone https://github.com/chris1111/Clover-ESP-Legacy.git
-cd $HOME/Clover-ESP-Legacy
-```
-
-#### Build
-```bash
-./Build.command
+git clone https://github.com/chris1111/Clover-ESP-Legacy.git && cd $HOME/Clover-ESP-Legacy && ./Build.command
 ```
 
 ### Result
