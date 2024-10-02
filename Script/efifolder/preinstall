@@ -120,7 +120,7 @@ if [[ -n "$keepBackupLimit" && "$keepBackupLimit" -ne 0 ]]; then
 
     # Create the backup directory
     mkdir -p "$backupDir"
-    ./Icon-Changer set "$backupRootDir" ./Icon.icns
+    ./seticon ./Icon.icns "$backupRootDir"
  
     echo "======================================================" >> "$install_log"
     echo "Backing up EFI files" >> "$install_log"
