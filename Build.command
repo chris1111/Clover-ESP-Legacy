@@ -53,7 +53,7 @@ productbuild --distribution "./Clover-Package/BUILD-PACKAGE/Distribution.xml"  \
 # Remove Build folder, change icon pkg
 rm -rf ./Clover-Package
 ./Script/efifolder/Icon-Changer set ./"Clover ESP Legacy.pkg" ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns
-
+./Script/efifolder/Icon-Changer set ./"Build.command" ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns
 Sleep 2
 
 Open -R ./"Clover ESP Legacy.pkg"
