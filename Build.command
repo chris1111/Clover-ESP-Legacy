@@ -28,11 +28,11 @@ Sleep 2
 # Build the Package with pkgbuild
 pkgbuild --root ./pre --scripts ./Script/pre --identifier com.chris1111.cloveresp.pre.pkg --version 1.0 --install-location / ./Clover-Package/BUILD-PACKAGE/pre.pkg
 pkgbuild --root ./cloverefiesp --scripts ./Script/cloverefiesp --identifier com.chris1111.cloverefiesp.pkg --version 1.0 --install-location / ./Clover-Package/BUILD-PACKAGE/cloverefiesp.pkg
-pkgbuild --root ./rcScripts --scripts ./Script/RcScripts --identifier com.chris1111.cloveresp.rcScripts.pkg --version 1.0 --install-location / ./Clover-Package/BUILD-PACKAGE/rcScripts.pkg
 pkgbuild --root ./boot0af --scripts ./Script/boot0af --identifier com.chris1111.boot0af.pkg --version 1.0 --install-location /Private/tmp/EFIROOTDIR ./Clover-Package/BUILD-PACKAGE/boot0af.pkg
 pkgbuild --root ./biosboot --identifier com.chris1111.biosboot.pkg --version 1.0 --install-location /Private/tmp ./Clover-Package/BUILD-PACKAGE/biosboot.pkg
 pkgbuild --root ./esptarget --scripts ./Script/esptarget --identifier com.chris1111.esptarget.pkg --version 1.0 --install-location / ./Clover-Package/BUILD-PACKAGE/esptarget.pkg
 pkgbuild --root ./efifolder --scripts ./Script/efifolder --identifier com.chris1111.efifolder.pkg --version 1.0 --install-location /Private/tmp/EFIROOTDIR ./Clover-Package/BUILD-PACKAGE/efifolder.pkg
+pkgbuild --root ./rcScripts --scripts ./Script/RcScripts --identifier com.chris1111.cloveresp.rcScripts.pkg --version 1.0 --install-location / ./Clover-Package/BUILD-PACKAGE/rcScripts.pkg
 pkgbuild --root ./post --scripts ./Script/post --identifier com.chris1111.post.pkg --version 1.0 --install-location / ./Clover-Package/BUILD-PACKAGE/post.pkg
 
 Sleep 2
