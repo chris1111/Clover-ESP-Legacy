@@ -1,5 +1,6 @@
 ### Welcome to the Clover ESP Legacy Package builder by chirs1111
 - macOS Package Clover ESP specially designed for Legacy Bios-based configurations
+- Make sur updating all kexts for new macOS version and probably smbios in config.plist
 
 -------------------------------
 - Credit: [Clover Team](https://github.com/CloverHackyColor/CloverBootloader)
