@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <installer-script minSpecVersion="1.000000" authoringTool="com.chris1111.Packager" authoringToolVersion="1.0.0" authoringToolBuild="500">
     <title>Clover ESP Legacy</title>
-    <options customize="never" allow-external-scripts="no" hostArchitectures="i386"/>
-    <domains enable_anywhere="true" enable_localSystem="true"/>
+    <options customize="never" allow-external-scripts="true"/>
+    <domains enable_anywhere="true"/>
     <background file="background" alignment="center" scaling="tofit"/>
     <background-darkAqua file="background" alignment="center" scaling="tofit"/>
     <welcome file="Welcome.rtf"/>

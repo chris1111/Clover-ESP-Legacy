@@ -166,7 +166,7 @@
 		<key>ShowOptimus</key>
 		<true/>
 		<key>Theme</key>
-		<string>OS_Sonoma</string>
+		<string>Glass</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>

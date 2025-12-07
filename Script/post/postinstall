@@ -37,7 +37,7 @@ case "${boottype}" in
 esac
 
 # Store last install revision
-$plistbuddy -c "Add CloverRevision integer 5160" "$CLOVER_INSTALLER_PLIST_NEW" >/dev/null
+$plistbuddy -c "Add CloverRevision integer 5164" "$CLOVER_INSTALLER_PLIST_NEW" >/dev/null
 
 # Get theme from config.plist
 config_theme=''
