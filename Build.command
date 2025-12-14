@@ -7,7 +7,7 @@ find . -name '.DS_Store' -type f -delete
 rm -rf ./Clover-Package
 rm -rf ./Clover-Package
 rm -rf ./"Clover ESP Legacy.pkg"
-
+rm -rf ./Build
 Sleep 1
 # Create build folder
 mkdir -p ./boot0af
@@ -16,6 +16,7 @@ mkdir -p ./esptarget
 mkdir -p ./post
 mkdir -p ./pre
 mkdir -p ./Clover-Package/BUILD-PACKAGE
+mkdir -p ./Build
 
 # shell script Notifications
 osascript -e 'display notification "Clover ESP Legacy Package" with title "Create"  sound name "default"'
@@ -48,15 +49,15 @@ Sleep 2
 productbuild --distribution "./Clover-Package/BUILD-PACKAGE/Distribution.xml"  \
 --package-path "./Clover-Package/BUILD-PACKAGE/" \
 --resources "./Clover-Package/BUILD-PACKAGE/Resources" \
-"./Clover ESP Legacy.pkg"
+"./Build/Clover ESP Legacy.pkg"
 
 # Remove Build folder, change icon pkg
 rm -rf ./Clover-Package
-./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./"Clover ESP Legacy.pkg"
+./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./Build/"Clover ESP Legacy.pkg"
 ./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./Build.command
 Sleep 2
 
-Open -R ./"Clover ESP Legacy.pkg"
+Open -R ./Build/"Clover ESP Legacy.pkg"
 
 echo "
 = = = = = = = = = = = = = = = = = = = = = = = = =

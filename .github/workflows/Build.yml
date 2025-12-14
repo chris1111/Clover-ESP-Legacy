@@ -1,0 +1,37 @@
+name: Clover-ESP-Legacy
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-macos:
+    name: Build Clover-ESP-Legacy
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Manage Version
+        run: |
+          git fetch --prune --unshallow --tags
+          echo "CUR_TAG=$(git tag -l | tail -1)" >> $GITHUB_ENV
+          echo "GIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+
+      - name: Build Clover-ESP-Legacy
+        run: |
+          chmod +x ./Build.command
+          ./Build.command "" G1
+      - name: Prepare Release
+        run: |
+          (cd "Build/" || exit 1)
+          releaseItems=(Build/Clover-ESP-Legacy.pkg)
+          for releaseItem in "${releaseItems[@]}"; do cp -Rf "${releaseItem}" ./ || exit 1; done
+      - name: Upload to Artifacts
+        uses: actions/upload-artifact@v5
+        with:
+          name: Clover-ESP-Legacy-${{ env.GIT_SHA }}
+          path: |
+            Clover-ESP-Legacy.pkg
+                    
