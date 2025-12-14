@@ -25,7 +25,7 @@ jobs:
           ./Build.command "" G1
       - name: Prepare Release
         run: |
-          releaseItems=(./Clover-ESP-Legacy.pkg)
+          releaseItems=(Clover-ESP-Legacy.pkg)
           for releaseItem in "${releaseItems[@]}"; do cp -Rf "${releaseItem}" ./ || exit 1; done
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v5
