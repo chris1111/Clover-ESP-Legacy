@@ -20,6 +20,8 @@
 git clone https://github.com/chris1111/Clover-ESP-Legacy.git && cd $HOME/Clover-ESP-Legacy && ./Build.command
 ```
 
+### Download from Artifacts ➥ [Build Package Actions](https://github.com/chris1111/Clover-ESP-Legacy/actions/workflows/Build.yml)
+
 ### Result
 <img width="1000" alt="1" src="Pics/Screenshot.png">
 
