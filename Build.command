@@ -49,15 +49,15 @@ Sleep 2
 productbuild --distribution "./Clover-Package/BUILD-PACKAGE/Distribution.xml"  \
 --package-path "./Clover-Package/BUILD-PACKAGE/" \
 --resources "./Clover-Package/BUILD-PACKAGE/Resources" \
-"./Build/Clover ESP Legacy.pkg"
+"./Build/Clover-ESP-Legacy.pkg"
 
 # Remove Build folder, change icon pkg
 rm -rf ./Clover-Package
-./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./Build/"Clover ESP Legacy.pkg"
+./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./Build/Clover-ESP-Legacy.pkg
 ./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./Build.command
 Sleep 2
 
-Open -R ./Build/"Clover ESP Legacy.pkg"
+Open -R ./Build/Clover-ESP-Legacy.pkg
 
 echo "
 = = = = = = = = = = = = = = = = = = = = = = = = =
