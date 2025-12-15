@@ -5,9 +5,14 @@ cd "$PARENTDIR"
 find . -name '.DS_Store' -type f -delete
 # Delete build if exist
 rm -rf ./Clover-Package
-rm -rf ./Clover-Package
-rm -rf ./"Clover ESP Legacy.pkg"
 rm -rf ./Build
+rm -rf ./boot0af
+rm -rf ./cloverefiesp
+rm -rf ./esptarget
+rm -rf ./post
+rm -rf ./pre
+rm -rf ./Clover-Package/BUILD-PACKAGE
+
 Sleep 1
 # Create build folder
 mkdir -p ./boot0af
@@ -53,6 +58,11 @@ productbuild --distribution "./Clover-Package/BUILD-PACKAGE/Distribution.xml"  \
 
 # Remove Build folder, change icon pkg
 rm -rf ./Clover-Package
+rm -rf ./boot0af
+rm -rf ./cloverefiesp
+rm -rf ./esptarget
+rm -rf ./post
+rm -rf ./pre
 ./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./Build/Clover-ESP-Legacy.pkg
 ./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./Build.command
 Sleep 2
