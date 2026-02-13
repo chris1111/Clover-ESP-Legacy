@@ -1,6 +1,8 @@
 #### Welcome to the Clover ESP Legacy Package builder by chirs1111
 [![Clover-ESP-Legacy](https://github.com/chris1111/Clover-ESP-Legacy/actions/workflows/Build.yml/badge.svg)](https://github.com/chris1111/Clover-ESP-Legacy/actions/workflows/Build.yml)
 
+<img src="https://hitscounter.dev/api/hit?url=https://github.com/chris1111&label=VISITORS&icon=gift&color=%23198754&message=&style=for-the-badge&tz=US%2FEastern">
+
 - macOS Package Clover ESP specially designed for Legacy Bios-based configurations
 - Make sur updating all kexts for new macOS version and probably smbios in config.plist
 
