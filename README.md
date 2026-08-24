@@ -28,6 +28,3 @@ git clone https://github.com/chris1111/Clover-ESP-Legacy.git && cd $HOME/Clover-
 
 USAGE:
 - Install the package to macOS USB Install Media, Install macOS then Install the Package to the macOS SSD to make it bootable without USB.
-
-USAGE: Clover-NVRAM
-- See Clover-NVRAM /`README`
