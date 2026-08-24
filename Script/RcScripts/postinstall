@@ -18,15 +18,15 @@ echo "preinstall: Root of system folder... $4"
 
 DEST_VOL="$3"
 EFI_ROOT_DIR=$(cd "${DEST_VOL}"/Private/tmp/EFIROOTDIR; pwd -P)
-CLOVER_INSTALLER_PLIST_NEW="${DEST_VOL}@CLOVER_INSTALLER_PLIST_NEW@"
+CLOVER_INSTALLER_PLIST_NEW="${DEST_VOL}/Library/Preferences/com.projectosx.clover.installer.plist.new"
 install_log="${DEST_VOL}/Private/tmp/Clover_Install_Log.txt"
 
 srcvolume="$DEST_VOL"
 destroot="$DEST_VOL"
 
 plistbuddy='/usr/libexec/PlistBuddy'
-installer_on_target_refid='@INSTALLER_ON_TARGET_REFID@'
-installer_on_all_volumes_refid='@INSTALLER_ON_ALL_VOLUMES_REFID@'
+installer_on_target_refid='org.clover.rc.scripts.on.target'
+installer_on_all_volumes_refid='org.clover.rc.scripts.on.all.volumes'
 
 echo "======================================================" >> "$install_log"
 echo "Installing RC Scripts" >> "$install_log"

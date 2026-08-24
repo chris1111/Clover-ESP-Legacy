@@ -1,0 +1,8 @@
+etc/rc.shutdown.d/80.save_nvram_plist.local
+etc/rc.clover.lib
+etc/rc.boot.d/10.save_and_rotate_boot_log.local
+etc/rc.boot.d/70.disable_sleep_proxy_client.local.disabled
+etc/rc.boot.d/20.mount_ESP.local
+Library/Application Support/Clover/CloverDaemon
+Library/Application Support/Clover/CloverDaemon-stopservice
+Library/LaunchDaemons/com.projectosx.clover.daemon.plist
