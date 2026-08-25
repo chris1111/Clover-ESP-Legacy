@@ -63,8 +63,8 @@ rm -rf ./cloverefiesp
 rm -rf ./esptarget
 rm -rf ./post
 rm -rf ./pre
-./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./Build/Clover-ESP-Legacy.pkg
-./Script/efifolder/seticon ./Clover-NVRAM/Clover-NVRAM.app/Contents/Resources/AppIcon.icns ./Build.command
+./Script/efifolder/seticon ./Pics/AppIcon.icns ./Build/Clover-ESP-Legacy.pkg
+./Script/efifolder/seticon ./Pics/AppIcon.icns ./Build.command
 Sleep 2
 
 Open -R ./Build/Clover-ESP-Legacy.pkg
