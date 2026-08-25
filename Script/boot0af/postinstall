@@ -12,6 +12,8 @@ installer_altboot_refid='org.clover.bootloader.altboot'
 #fdisk440="${DEST_VOL}"/Private/tmp/usr/local/bin/fdisk440
 boot1install="${DEST_VOL}"/Private/tmp/usr/local/bin/boot1-install
 partutil="${DEST_VOL}"/Private/tmp/usr/local/bin/partutil
+nvram2="${DEST_VOL}"/Private/tmp/usr/local/bin/nvram2
+bdmesg="${DEST_VOL}"/Private/tmp/usr/local/bin/bdmesg
 
 
 function finish {
@@ -245,6 +247,12 @@ fi
 
 # Mark that the option was selected
 $plistbuddy -c "Add $installer_choice bool true" "$CLOVER_INSTALLER_PLIST_NEW" >/dev/null
+
+
+# Copying essentiels
+mkdir -p /usr/local/bin
+cp -Rp "$nvram2" "${DEST_VOL}"/usr/local/bin
+cp -Rp "$bdmesg" "${DEST_VOL}"/usr/local/bin
 
 # Clean Up
 rm -f /tmp/origbs /tmp/newbs
