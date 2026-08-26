@@ -4,7 +4,7 @@
 - macOS Package Clover ESP specially designed for Legacy Bios-based configurations
 - Make sur updating all kexts for new macOS version
 - Default config.plist is for 10.6 to 10.13
-- If you use Big Sur and above rename the `config-BigSur-to-Tahoe.plist` to config.plist
+- If you use Big Sur or Monterey rename the `config-BigSur-to-Monterey.plist` to config.plist
 
 -----------------------------------
 - Credit: [Clover Team](https://github.com/CloverHackyColor/CloverBootloader)
