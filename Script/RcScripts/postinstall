@@ -148,4 +148,8 @@ if [[ "$install_on_target" == true ]]; then
     fi
 fi
 
+# Make Executable the scripts
+chmod 755 "${DEST_VOL}/Library/Application Support/Clover/CloverDaemon"
+chmod 755 "${DEST_VOL}/Library/Application Support/Clover/CloverDaemon-stopservice"
+
 echo "" >> "$install_log"

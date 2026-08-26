@@ -73,8 +73,6 @@
 	<dict>
 		<key>Arguments</key>
 		<string>arch=x86_64 dart=0 keepsyms=1 -lilubetall alcid=11 amfi=0x80 -v</string>
-		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NeverDoRecovery</key>
@@ -166,7 +164,7 @@
 		<key>ShowOptimus</key>
 		<true/>
 		<key>Theme</key>
-		<string>Glass</string>
+		<string>Coders</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -233,6 +231,8 @@
 		<key>RebuildAppleMemoryMap</key>
 		<true/>
 		<key>ResizeAppleGpuBars</key>
+		<integer>-1</integer>
+		<key>ResizeGpuBars</key>
 		<integer>-1</integer>
 		<key>SetupVirtualMap</key>
 		<true/>
