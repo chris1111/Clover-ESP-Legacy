@@ -38,7 +38,7 @@ pkgbuild --root ./boot0af --scripts ./Script/boot0af --identifier com.chris1111.
 pkgbuild --root ./biosboot --identifier com.chris1111.biosboot.pkg --version 1.0 --install-location /Private/tmp ./Clover-Package/BUILD-PACKAGE/biosboot.pkg
 pkgbuild --root ./esptarget --scripts ./Script/esptarget --identifier com.chris1111.esptarget.pkg --version 1.0 --install-location / ./Clover-Package/BUILD-PACKAGE/esptarget.pkg
 pkgbuild --root ./efifolder --scripts ./Script/efifolder --identifier com.chris1111.efifolder.pkg --version 1.0 --install-location /Private/tmp/EFIROOTDIR ./Clover-Package/BUILD-PACKAGE/efifolder.pkg
-pkgbuild --root ./rcScripts --scripts ./Script/RcScripts --identifier com.chris1111.cloveresp.rcScripts.pkg --version 1.0 --install-location / ./Clover-Package/BUILD-PACKAGE/rcScripts.pkg
+pkgbuild --root ./CloverLogoutHook --scripts ./Script/CloverLogoutHook --identifier com.chris1111.cloveresp.CloverLogoutHook.pkg --version 1.0 --install-location /Library/Application\ Support/CloverLogoutHook ./Clover-Package/BUILD-PACKAGE/CloverLogoutHook.pkg
 pkgbuild --root ./post --scripts ./Script/post --identifier com.chris1111.post.pkg --version 1.0 --install-location / ./Clover-Package/BUILD-PACKAGE/post.pkg
 
 Sleep 2
