@@ -27,7 +27,6 @@
     <choice id="choice3" title="Clover_v2.5k" description="Install  Clover_v2.5k ESP to the Selected volumes." start_visible="false"/>
     <choice id="choice4" title="pre" start_visible="false">
         <pkg-ref id="com.chris1111.cloveresp.pre.pkg"/>
-        <pkg-ref id="com.chris1111.CloverLogoutHook.CloverLogoutHook.pkg"/>
         <pkg-ref id="com.chris1111.cloveresp.cloverefiesp.pkg"/>
     </choice>
     <choice id="choice5" title="boot0af" start_visible="false">
@@ -39,12 +38,13 @@
     </choice>
     <choice id="choice7" title="efofolder" start_visible="false">
         <pkg-ref id="com.chris1111.cloveresp.efifolder.pkg"/>
+        <pkg-ref id="com.chris1111.cloveresp.CloverLogoutHook.pkg"/>
     </choice>
     <choice id="choice8" title="post" start_visible="false">
         <pkg-ref id="com.chris1111.cloveresp.post.pkg"/>
     </choice>
     <pkg-ref id="com.chris1111.cloveresp.pre.pkg" installKBytes="0" version="1.0" auth="Root">#pre.pkg</pkg-ref>
-    <pkg-ref id="com.chris1111.CloverLogoutHook.CloverLogoutHook.pkg" installKBytes="64" version="1.0" auth="Root">#cloverlogouthook.pkg</pkg-ref>
+    <pkg-ref id="com.chris1111.cloveresp.CloverLogoutHook.pkg" installKBytes="64" version="1.0" auth="Root">#cloverlogouthook.pkg</pkg-ref>
     <pkg-ref id="com.chris1111.cloveresp.cloverefiesp.pkg" installKBytes="64" version="1.0" auth="Root">#cloverefiesp.pkg</pkg-ref>
     <pkg-ref id="com.chris1111.cloveresp.boot0af.pkg" installKBytes="0" version="1.0" auth="Root">#boot0af.pkg</pkg-ref>
     <pkg-ref id="com.chris1111.cloveresp.biosboot.pkg" installKBytes="1556" version="1.0" auth="Root">#biosboot.pkg</pkg-ref>
